@@ -2,7 +2,7 @@
     margin-top: 65px;
     height: 50px;
     width: 100%;
-    background-color: rgb(238, 238, 238);
+    background-color: darken($white-color, $amount: 6%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -21,7 +21,7 @@
 
 .booking__item {
     height: 285px;
-    background-color: rgb(248, 248, 248);
+    background-color: darken($white-color, $amount: 3%);
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -153,5 +153,99 @@
             color: lighten($black-color, $amount: 50%);
         }
 
+    }
+}
+
+.restaurants__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: $margins-divs;
+    background-color: lighten($black-color, $amount: 97%);
+
+    h2 {
+        width: 335px;
+        margin-top: $margins-divs;
+        margin-bottom: $margin-title * 0.5;
+    }
+
+    .cards {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .card {
+            width: 335px;
+            height: 250px;
+            overflow: hidden;
+            border-radius: 15px;
+            -webkit-box-shadow: -1px 3px 9px 1px rgba(0, 0, 0, 0.15);
+            box-shadow: -1px 3px 9px 1px rgba(0, 0, 0, 0.15);
+            margin: $small-margins 0;
+
+            img {
+                object-fit: cover;
+                width: 100%;
+                height: 100%;
+
+            }
+
+            .card__text {
+                background-color: $white-color;
+                height: 65px;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+                flex-direction: column;
+                padding-left: $small-margins;
+                position: relative;
+
+                .restaurant__name {
+                    font-size: map-get($font-size, title3);
+                    font-weight: 800;
+
+                }
+
+                .restaurant__city {
+                    font-size: map-get($font-size, title3) * 0.9;
+                }
+
+                i {
+                    position: absolute;
+                    right: 7%;
+                    font-size: 2rem;
+                    transform: translateY(-25%);
+                    display: flex;
+                    justify-content: center;
+                    color: $white-color;
+                    width: 2rem;
+                    -webkit-text-stroke-width: 1px;
+                    -webkit-text-stroke-color: $black-color;
+                    transition: all 0.3s;
+                    cursor: pointer;
+
+                    &:hover {
+                        background: hsla(267, 66%, 60%, 1);
+                        background: linear-gradient(250deg, hsla(267, 66%, 60%, 1) 0%, hsla(317, 100%, 74%, 1) 100%);
+                        background: -webkit-linear-gradient(250deg, hsla(267, 66%, 60%, 1) 0%, hsla(317, 100%, 74%, 1) 100%);
+                        -webkit-background-clip: text;
+                        background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                        -webkit-text-stroke-width: 0px;
+                        -webkit-text-stroke-color: $main-color;
+                        transition: all 0.3s;
+
+                    }
+                }
+            }
+
+            img,
+            .card__text {
+                transform: translateY(-65px);
+            }
+        }
     }
 }

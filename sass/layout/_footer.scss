@@ -1,0 +1,32 @@
+footer {
+    background-color: lighten($black-color, $amount: 20%);
+    color: $white-color;
+    height: 180px;
+
+    h3 {
+        margin-left: $small-margins * 2;
+        padding-top: $small-margins * 2;
+        font-family: 'Shrikhand', cursive;
+        font-weight: 100;
+    }
+
+    ul {
+        margin-left: $small-margins * 2;
+        padding-top: $small-margins * 2;
+
+        li {
+            margin-bottom: $small-margins;
+
+            i {
+                width: 20px;
+
+            }
+
+            a {
+
+                color: $white-color;
+                font-size: map-get($font-size, paragraph) * 0.8;
+            }
+        }
+    }
+}
