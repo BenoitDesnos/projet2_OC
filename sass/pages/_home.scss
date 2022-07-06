@@ -52,6 +52,16 @@
         height: 50px;
         cursor: pointer;
 
+        box-shadow: -0px 3px 9px 0px rgba(0, 0, 0, 0.425);
+        transition: all 0.3s;
+
+        &:hover {
+            transform: translateY(-5px);
+
+            box-shadow: -0px 5px 9px 0px rgba(0, 0, 0, 0.986);
+            transition: all 0.3s;
+        }
+
         p {
             color: white;
             margin: 0 20px 0 20px;
@@ -66,11 +76,11 @@
     align-items: center;
     flex-direction: column;
     width: 86%;
-    margin: $margins-divs auto $margins-divs auto;
+    margin: $gap-divs auto $gap-divs auto;
 
     h2 {
         width: 100%;
-        margin-bottom: $margin-title;
+        margin-bottom: $gap-title;
     }
 }
 
@@ -90,6 +100,14 @@
     }
 
     .choice__item:nth-child(3) {
+        &:hover {
+
+            background-color: lighten($main-color, $amount: 37%);
+
+            box-shadow: -1px 3px 9px 1px rgba(0, 0, 0, 0.30);
+            transition: all 0.3s;
+        }
+
         &::before {
             content: "3";
         }
@@ -120,6 +138,15 @@
             padding-top: 2px;
         }
 
+        &:hover {
+
+            background-color: $white-color;
+
+            box-shadow: -1px 3px 9px 1px rgba(0, 0, 0, 0.30);
+            transition: all 0.3s;
+        }
+
+        cursor: pointer;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -128,9 +155,10 @@
         background-color: lighten($black-color, $amount: 97%);
         border-radius: 20px / 20px;
         margin: 10px 0 10px 0;
-        -webkit-box-shadow: -1px 3px 9px 1px rgba(0, 0, 0, 0.15);
+
         box-shadow: -1px 3px 9px 1px rgba(0, 0, 0, 0.15);
         position: relative;
+        transition: all 0.3s;
 
         p {
             font-weight: 600;
@@ -161,13 +189,13 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-bottom: $margins-divs;
+    padding-bottom: $gap-divs;
     background-color: lighten($black-color, $amount: 97%);
 
     h2 {
         width: 335px;
-        margin-top: $margins-divs;
-        margin-bottom: $margin-title * 0.5;
+        margin-top: $gap-divs;
+        margin-bottom: $gap-title * 0.5;
     }
 
     .cards {
@@ -181,9 +209,17 @@
             height: 250px;
             overflow: hidden;
             border-radius: 15px;
-            -webkit-box-shadow: -1px 3px 9px 1px rgba(0, 0, 0, 0.15);
+
             box-shadow: -1px 3px 9px 1px rgba(0, 0, 0, 0.15);
-            margin: $small-margins 0;
+            margin: $small-gap 0;
+            transition: all 0.1s;
+            cursor: pointer;
+
+            &:hover {
+                transform: scale(1.05);
+                transition: all 0.1s;
+                box-shadow: -1px 3px 9px 1px rgba(0, 0, 0, 0.568);
+            }
 
             img {
                 object-fit: cover;
@@ -200,7 +236,7 @@
                 justify-content: center;
                 align-items: flex-start;
                 flex-direction: column;
-                padding-left: $small-margins;
+                padding-left: $small-gap;
                 position: relative;
 
                 .restaurant__name {
@@ -212,34 +248,6 @@
                 .restaurant__city {
                     font-size: map-get($font-size, title3) * 0.9;
                 }
-
-                i {
-                    position: absolute;
-                    right: 7%;
-                    font-size: 2rem;
-                    transform: translateY(-25%);
-                    display: flex;
-                    justify-content: center;
-                    color: $white-color;
-                    width: 2rem;
-                    -webkit-text-stroke-width: 1px;
-                    -webkit-text-stroke-color: $black-color;
-                    transition: all 0.3s;
-                    cursor: pointer;
-
-                    &:hover {
-                        background: hsla(267, 66%, 60%, 1);
-                        background: linear-gradient(250deg, hsla(267, 66%, 60%, 1) 0%, hsla(317, 100%, 74%, 1) 100%);
-                        background: -webkit-linear-gradient(250deg, hsla(267, 66%, 60%, 1) 0%, hsla(317, 100%, 74%, 1) 100%);
-                        -webkit-background-clip: text;
-                        background-clip: text;
-                        -webkit-text-fill-color: transparent;
-                        -webkit-text-stroke-width: 0px;
-                        -webkit-text-stroke-color: $main-color;
-                        transition: all 0.3s;
-
-                    }
-                }
             }
 
             img,
@@ -247,5 +255,30 @@
                 transform: translateY(-65px);
             }
         }
+    }
+}
+
+.fa-heart {
+    position: absolute;
+    right: 7%;
+    font-size: 2rem;
+    transform: translateY(-25%);
+    display: flex;
+    justify-content: center;
+    width: 2.5rem;
+    cursor: pointer;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: $black-color;
+    animation: heart-reverse 0.3s linear both;
+
+    &:hover {
+
+        animation: heart 0.3s linear both;
+
+
+
     }
 }

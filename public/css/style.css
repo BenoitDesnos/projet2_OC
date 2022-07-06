@@ -1,3 +1,224 @@
+@keyframes heart {
+  0% {
+    background-color: rgba(146, 86, 220, 0);
+    background-color: linear-gradient(250deg, rgba(146, 86, 220, 0) 0%, rgba(255, 122, 217, 0) 100%);
+    background: -webkit-linear-gradient(250deg, rgba(146, 86, 220, 0) 0%, rgba(255, 122, 217, 0) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+  }
+  10% {
+    background-color: rgba(146, 86, 220, 0.1);
+    background-color: linear-gradient(250deg, rgba(146, 86, 220, 0.1) 0%, rgba(255, 122, 217, 0.1) 100%);
+    background: -webkit-linear-gradient(250deg, rgba(146, 86, 220, 0.1) 0%, rgba(255, 122, 217, 0.1) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 0px;
+    transform: scale(1.05) translateY(-25%);
+  }
+  20% {
+    background-color: rgba(146, 86, 220, 0.2);
+    background-color: linear-gradient(250deg, rgba(146, 86, 220, 0.2) 0%, rgba(255, 122, 217, 0.2) 100%);
+    background: -webkit-linear-gradient(250deg, rgba(146, 86, 220, 0.2) 0%, rgba(255, 122, 217, 0.2) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 0px;
+    transform: scale(1.05) translateY(-25%);
+  }
+  30% {
+    background-color: rgba(146, 86, 220, 0.3);
+    background-color: linear-gradient(250deg, rgba(146, 86, 220, 0.3) 0%, rgba(255, 122, 217, 0.3) 100%);
+    background: -webkit-linear-gradient(250deg, rgba(146, 86, 220, 0.3) 0%, rgba(255, 122, 217, 0.3) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 0px;
+    transform: scale(1.05) translateY(-25%);
+  }
+  40% {
+    background-color: rgba(146, 86, 220, 0.4);
+    background-color: linear-gradient(250deg, rgba(146, 86, 220, 0.4) 0%, rgba(255, 122, 217, 0.4) 100%);
+    background: -webkit-linear-gradient(250deg, rgba(146, 86, 220, 0.4) 0%, rgba(255, 122, 217, 0.4) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 0px;
+    transform: scale(1.05) translateY(-25%);
+  }
+  50% {
+    background-color: rgba(146, 86, 220, 0.5);
+    background-color: linear-gradient(250deg, rgba(146, 86, 220, 0.5) 0%, rgba(255, 122, 217, 0.5) 100%);
+    background: -webkit-linear-gradient(250deg, rgba(146, 86, 220, 0.5) 0%, rgba(255, 122, 217, 0.5) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 0px;
+    transform: scale(1.05) translateY(-25%);
+  }
+  60% {
+    background-color: rgba(146, 86, 220, 0.6);
+    background-color: linear-gradient(250deg, rgba(146, 86, 220, 0.6) 0%, rgba(255, 122, 217, 0.6) 100%);
+    background: -webkit-linear-gradient(250deg, rgba(146, 86, 220, 0.6) 0%, rgba(255, 122, 217, 0.6) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 0px;
+    transform: scale(1.05) translateY(-25%);
+  }
+  70% {
+    background-color: rgba(146, 86, 220, 0.7);
+    background-color: linear-gradient(250deg, rgba(146, 86, 220, 0.7) 0%, rgba(255, 122, 217, 0.7) 100%);
+    background: -webkit-linear-gradient(250deg, rgba(146, 86, 220, 0.7) 0%, rgba(255, 122, 217, 0.7) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 0px;
+    transform: scale(1.05) translateY(-25%);
+  }
+  80% {
+    background-color: rgba(146, 86, 220, 0.8);
+    background-color: linear-gradient(250deg, rgba(146, 86, 220, 0.8) 0%, rgba(255, 122, 217, 0.8) 100%);
+    background: -webkit-linear-gradient(250deg, rgba(146, 86, 220, 0.8) 0%, rgba(255, 122, 217, 0.8) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 0px;
+    transform: scale(1.05) translateY(-25%);
+  }
+  90% {
+    background-color: rgba(146, 86, 220, 0.9);
+    background-color: linear-gradient(250deg, rgba(146, 86, 220, 0.9) 0%, rgba(255, 122, 217, 0.9) 100%);
+    background: -webkit-linear-gradient(250deg, rgba(146, 86, 220, 0.9) 0%, rgba(255, 122, 217, 0.9) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 0px;
+    transform: scale(1.05) translateY(-25%);
+  }
+  100% {
+    background-color: hsl(267deg, 66%, 60%);
+    background-color: linear-gradient(250deg, hsl(267deg, 66%, 60%) 0%, hsl(317deg, 100%, 74%) 100%);
+    background: -webkit-linear-gradient(250deg, hsl(267deg, 66%, 60%) 0%, hsl(317deg, 100%, 74%) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 0px;
+    transform: scale(1.05) translateY(-25%);
+  }
+}
+@keyframes heart-reverse {
+  0% {
+    background-color: hsl(267deg, 66%, 60%);
+    background-color: linear-gradient(250deg, hsl(267deg, 66%, 60%) 0%, hsl(317deg, 100%, 74%) 100%);
+    background: -webkit-linear-gradient(250deg, hsl(267deg, 66%, 60%) 0%, hsl(317deg, 100%, 74%) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    transform: translateY(-25%);
+  }
+  10% {
+    background-color: rgba(146, 86, 220, 0.9);
+    background-color: linear-gradient(250deg, rgba(146, 86, 220, 0.9) 0%, rgba(255, 122, 217, 0.9) 100%);
+    background: -webkit-linear-gradient(250deg, rgba(146, 86, 220, 0.9) 0%, rgba(255, 122, 217, 0.9) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    transform: translateY(-25%);
+  }
+  20% {
+    background-color: rgba(146, 86, 220, 0.8);
+    background-color: linear-gradient(250deg, rgba(146, 86, 220, 0.8) 0%, rgba(255, 122, 217, 0.8) 100%);
+    background: -webkit-linear-gradient(250deg, rgba(146, 86, 220, 0.8) 0%, rgba(255, 122, 217, 0.8) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    transform: translateY(-25%);
+  }
+  30% {
+    background-color: rgba(146, 86, 220, 0.7);
+    background-color: linear-gradient(250deg, rgba(146, 86, 220, 0.7) 0%, rgba(255, 122, 217, 0.7) 100%);
+    background: -webkit-linear-gradient(250deg, rgba(146, 86, 220, 0.7) 0%, rgba(255, 122, 217, 0.7) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 0px;
+    transform: scale(1.05) translateY(-25%);
+  }
+  40% {
+    background-color: rgba(146, 86, 220, 0.6);
+    background-color: linear-gradient(250deg, rgba(146, 86, 220, 0.6) 0%, rgba(255, 122, 217, 0.6) 100%);
+    background: -webkit-linear-gradient(250deg, rgba(146, 86, 220, 0.6) 0%, rgba(255, 122, 217, 0.6) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 0px;
+    transform: scale(1.05) translateY(-25%);
+  }
+  50% {
+    background-color: rgba(146, 86, 220, 0.5);
+    background-color: linear-gradient(250deg, rgba(146, 86, 220, 0.5) 0%, rgba(255, 122, 217, 0.5) 100%);
+    background: -webkit-linear-gradient(250deg, rgba(146, 86, 220, 0.5) 0%, rgba(255, 122, 217, 0.5) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 0px;
+    transform: scale(1.05) translateY(-25%);
+  }
+  60% {
+    background-color: rgba(146, 86, 220, 0.4);
+    background-color: linear-gradient(250deg, rgba(146, 86, 220, 0.4) 0%, rgba(255, 122, 217, 0.4) 100%);
+    background: -webkit-linear-gradient(250deg, rgba(146, 86, 220, 0.4) 0%, rgba(255, 122, 217, 0.4) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 0px;
+    transform: scale(1.05) translateY(-25%);
+  }
+  70% {
+    background-color: rgba(146, 86, 220, 0.3);
+    background-color: linear-gradient(250deg, rgba(146, 86, 220, 0.3) 0%, rgba(255, 122, 217, 0.3) 100%);
+    background: -webkit-linear-gradient(250deg, rgba(146, 86, 220, 0.3) 0%, rgba(255, 122, 217, 0.3) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 0px;
+    transform: scale(1.05) translateY(-25%);
+  }
+  80% {
+    background-color: rgba(146, 86, 220, 0.2);
+    background-color: linear-gradient(250deg, rgba(146, 86, 220, 0.2) 0%, rgba(255, 122, 217, 0.2) 100%);
+    background: -webkit-linear-gradient(250deg, rgba(146, 86, 220, 0.2) 0%, rgba(255, 122, 217, 0.2) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 0px;
+    transform: scale(1.05) translateY(-25%);
+  }
+  90% {
+    background-color: rgba(146, 86, 220, 0.1);
+    background-color: linear-gradient(250deg, rgba(146, 86, 220, 0.1) 0%, rgba(255, 122, 217, 0.1) 100%);
+    background: -webkit-linear-gradient(250deg, rgba(146, 86, 220, 0.1) 0%, rgba(255, 122, 217, 0.1) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 0px;
+    transform: scale(1.05) translateY(-25%);
+  }
+  100% {
+    background-color: rgba(146, 86, 220, 0);
+    background-color: linear-gradient(250deg, rgba(146, 86, 220, 0) 0%, rgba(255, 122, 217, 0) 100%);
+    background: -webkit-linear-gradient(250deg, rgba(146, 86, 220, 0) 0%, rgba(255, 122, 217, 0) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+  }
+}
 *,
 *::after,
 *::before {
@@ -64,6 +285,13 @@ header {
   z-index: 2;
   background-color: white;
 }
+header a {
+  position: absolute;
+  left: 5%;
+}
+header a i {
+  font-size: 20px;
+}
 
 footer {
   background-color: #333333;
@@ -89,6 +317,63 @@ footer ul li i {
 footer ul li a {
   color: white;
   font-size: 1.44rem;
+}
+
+.main__wrapper {
+  margin-top: 65px;
+  background-image: url(./../../img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  min-height: 300px;
+  width: 100%;
+}
+.main__wrapper .menus {
+  background-color: #f7f7f7;
+  transform: translateY(200px);
+  border-radius: 40px 40px 0px 0px;
+  padding-left: 10px;
+  padding-right: 10px;
+  position: relative;
+}
+.main__wrapper .menus .fa-heart {
+  top: 15%;
+  right: 10%;
+}
+.main__wrapper .menus .starters {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.main__wrapper .menus .starters h2 {
+  padding-left: 10px;
+  font-size: 1.68rem;
+  font-weight: 400;
+  color: #737373;
+  position: relative;
+  margin-bottom: 10px;
+}
+.main__wrapper .menus .starters h2::after {
+  content: "";
+  width: 40px;
+  height: 3px;
+  display: block;
+  background-color: #99E2D0;
+  position: absolute;
+  bottom: -5px;
+}
+.main__wrapper .menus .starters .starter {
+  background-color: white;
+  width: 98%;
+  margin: 10px auto;
+  padding: 10px;
+  border-radius: 15px;
+  box-shadow: -1px 3px 9px 1px rgba(0, 0, 0, 0.15);
+}
+.main__wrapper H1 {
+  padding-top: 30px;
+  padding-left: 10px;
 }
 
 .location {
@@ -138,6 +423,13 @@ footer ul li a {
   margin-top: 20px;
   height: 50px;
   cursor: pointer;
+  box-shadow: 0px 3px 9px 0px rgba(0, 0, 0, 0.425);
+  transition: all 0.3s;
+}
+.booking__item button:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 5px 9px 0px rgba(0, 0, 0, 0.986);
+  transition: all 0.3s;
 }
 .booking__item button p {
   color: white;
@@ -173,6 +465,11 @@ footer ul li a {
 .choice__items .choice__item:nth-child(3) {
   background-color: #f2eafb;
 }
+.choice__items .choice__item:nth-child(3):hover {
+  background-color: #f7f2fc;
+  box-shadow: -1px 3px 9px 1px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s;
+}
 .choice__items .choice__item:nth-child(3)::before {
   content: "3";
 }
@@ -180,6 +477,7 @@ footer ul li a {
   color: #9356DC;
 }
 .choice__items .choice__item {
+  cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -188,9 +486,9 @@ footer ul li a {
   background-color: #f7f7f7;
   border-radius: 20px/20px;
   margin: 10px 0 10px 0;
-  -webkit-box-shadow: -1px 3px 9px 1px rgba(0, 0, 0, 0.15);
   box-shadow: -1px 3px 9px 1px rgba(0, 0, 0, 0.15);
   position: relative;
+  transition: all 0.3s;
 }
 .choice__items .choice__item::before {
   content: "1";
@@ -206,6 +504,11 @@ footer ul li a {
   justify-content: center;
   align-items: center;
   padding-top: 2px;
+}
+.choice__items .choice__item:hover {
+  background-color: white;
+  box-shadow: -1px 3px 9px 1px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s;
 }
 .choice__items .choice__item p {
   font-weight: 600;
@@ -249,9 +552,15 @@ footer ul li a {
   height: 250px;
   overflow: hidden;
   border-radius: 15px;
-  -webkit-box-shadow: -1px 3px 9px 1px rgba(0, 0, 0, 0.15);
   box-shadow: -1px 3px 9px 1px rgba(0, 0, 0, 0.15);
   margin: 10px 0;
+  transition: all 0.1s;
+  cursor: pointer;
+}
+.restaurants__wrapper .cards .card:hover {
+  transform: scale(1.05);
+  transition: all 0.1s;
+  box-shadow: -1px 3px 9px 1px rgba(0, 0, 0, 0.568);
 }
 .restaurants__wrapper .cards .card img {
   object-fit: cover;
@@ -276,34 +585,29 @@ footer ul li a {
 .restaurants__wrapper .cards .card .card__text .restaurant__city {
   font-size: 1.44rem;
 }
-.restaurants__wrapper .cards .card .card__text i {
+.restaurants__wrapper .cards .card img,
+.restaurants__wrapper .cards .card .card__text {
+  transform: translateY(-65px);
+}
+
+.fa-heart {
   position: absolute;
   right: 7%;
   font-size: 2rem;
   transform: translateY(-25%);
   display: flex;
   justify-content: center;
-  color: white;
-  width: 2rem;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: black;
-  transition: all 0.3s;
+  width: 2.5rem;
   cursor: pointer;
-}
-.restaurants__wrapper .cards .card .card__text i:hover {
-  background: hsl(267deg, 66%, 60%);
-  background: linear-gradient(250deg, hsl(267deg, 66%, 60%) 0%, hsl(317deg, 100%, 74%) 100%);
-  background: -webkit-linear-gradient(250deg, hsl(267deg, 66%, 60%) 0%, hsl(317deg, 100%, 74%) 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  -webkit-text-stroke-width: 0px;
-  -webkit-text-stroke-color: #9356DC;
-  transition: all 0.3s;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  animation: heart-reverse 0.3s linear both;
 }
-.restaurants__wrapper .cards .card img,
-.restaurants__wrapper .cards .card .card__text {
-  transform: translateY(-65px);
+.fa-heart:hover {
+  animation: heart 0.3s linear both;
 }
 
 /*# sourceMappingURL=style.css.map */

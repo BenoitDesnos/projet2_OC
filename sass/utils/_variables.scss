@@ -3,35 +3,17 @@ $secondary-color: #FF79DA;
 $third-color: #99E2D0;
 $black-color: black;
 $white-color: white;
-
-
-
-
-
-
-
-// margins
-$margins-divs: 50px;
-$margin-title: 30px;
-$small-margins: 10px; // transisiton nav
-
-$cubic-scroll-nav: cubic-bezier(0, 0.54, 0.13, 0.99);
-
-//variables cours
-
-$heading-shadow-size: 0.55rem;
-$layout-margin: 3rem;
-$grid-gutter: $layout-margin * 0.8;
-
+// gaps
+$gap-divs: 50px;
+$gap-title: 30px;
+$small-gap: 10px;
+//maps
 $font-size: (basic: 1.5rem,
   title1: 2.8rem,
   title2: 2.4rem,
   title3: 1.6rem,
   title4: 2rem,
-
   paragraph: 1.8rem,
-
-
 );
 $breakpoints: (mobile: 700px,
   tablet: 1024px,
