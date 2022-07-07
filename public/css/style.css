@@ -219,6 +219,27 @@
     background-clip: text;
   }
 }
+@keyframes items-display {
+  0% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  33% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  66% {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+  75% {
+    transform: translateY(5px);
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
 *,
 *::after,
 *::before {
@@ -256,6 +277,8 @@ ul {
 h1 {
   font-family: "Shrikhand", cursive;
   font-size: 2.8rem;
+  padding-top: 30px;
+  padding-left: 10px;
 }
 
 h2 {
@@ -269,6 +292,30 @@ h3 {
 
 p {
   font-size: 1.8rem;
+}
+
+main button {
+  background: rgb(255, 121, 218);
+  background: linear-gradient(175deg, rgb(255, 121, 218) 0%, rgb(147, 86, 220) 100%);
+  border: none;
+  border-radius: 25px;
+  margin: 20px auto 0 auto;
+  height: 50px;
+  cursor: pointer;
+  min-width: 190px;
+  display: block;
+  box-shadow: 0px 3px 9px 0px rgba(0, 0, 0, 0.425);
+  transition: all 0.3s;
+}
+main button:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 5px 9px 0px rgba(0, 0, 0, 0.986);
+  transition: all 0.3s;
+}
+main button span {
+  color: white;
+  margin: 0 20px 0 20px;
+  font-size: 1.62rem;
 }
 
 header {
@@ -291,6 +338,167 @@ header a {
 }
 header a i {
   font-size: 20px;
+}
+
+.main__wrapper {
+  margin-top: 65px;
+  background-color: #f7f7f7;
+  display: flex;
+  flex-direction: column;
+}
+.main__wrapper .background__img {
+  height: 200px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 300px;
+  width: 100%;
+}
+.main__wrapper .background__img.dish1 {
+  background-image: url(./../../img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+}
+.main__wrapper .background__img.dish2 {
+  background-image: url(./../../img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
+}
+.main__wrapper .background__img.dish3 {
+  background-image: url(./../../img/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
+}
+.main__wrapper .background__img.dish4 {
+  background-image: url(./../../img/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
+}
+.main__wrapper .menus {
+  background-color: #f7f7f7;
+  transform: translateY(-40px);
+  border-radius: 40px 40px 0px 0px;
+  padding-left: 10px;
+  padding-right: 10px;
+  position: relative;
+  padding-bottom: 30px;
+}
+.main__wrapper .menus .fa-heart {
+  top: 40px;
+  right: 10%;
+}
+.main__wrapper .menus .starters,
+.main__wrapper .menus .main__dish,
+.main__wrapper .menus .desserts {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.main__wrapper .menus .desserts {
+  margin-bottom: 50px;
+}
+.main__wrapper .menus h2 {
+  padding-left: 10px;
+  font-size: 1.68rem;
+  font-weight: 400;
+  color: #737373;
+  position: relative;
+  margin-bottom: 10px;
+}
+.main__wrapper .menus h2::after {
+  content: "";
+  width: 40px;
+  height: 3px;
+  display: block;
+  background-color: #99E2D0;
+  position: absolute;
+  bottom: -5px;
+}
+.main__wrapper .menus h3 {
+  font-size: 1.92rem;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow-x: hidden;
+}
+.main__wrapper .menus p {
+  font-size: 1.62rem;
+  font-weight: 400;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow-x: hidden;
+}
+.main__wrapper .menus .items1 {
+  animation: items-display 1.5s forwards linear;
+}
+.main__wrapper .menus .items2 {
+  animation: items-display 1.5s 0.2s forwards linear;
+}
+.main__wrapper .menus .items3 {
+  animation: items-display 1.5s 0.4s forwards linear;
+}
+.main__wrapper .menus .items4 {
+  animation: items-display 1.5s 0.6s forwards linear;
+}
+.main__wrapper .menus .items {
+  background-color: white;
+  opacity: 0;
+  width: 98%;
+  height: 70px;
+  margin: 10px auto;
+  border-radius: 15px;
+  box-shadow: -1px 3px 9px 1px rgba(0, 0, 0, 0.15);
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  transform: translateY(30px);
+  cursor: pointer;
+}
+.main__wrapper .menus .items:hover .item__validate {
+  right: 0%;
+}
+.main__wrapper .menus .items:hover .item__validate i {
+  transform: rotate(360deg);
+}
+.main__wrapper .menus .items:hover span {
+  right: 80px;
+}
+.main__wrapper .menus .items:hover .item__text {
+  width: 73%;
+}
+.main__wrapper .menus .items:hover .item__validate,
+.main__wrapper .menus .items:hover span,
+.main__wrapper .menus .items:hover .item__text,
+.main__wrapper .menus .items:hover i {
+  transition: all 0.3s;
+}
+.main__wrapper .menus .items .item__validate,
+.main__wrapper .menus .items span,
+.main__wrapper .menus .items .item__text,
+.main__wrapper .menus .items i {
+  transition: all 0.3s;
+}
+.main__wrapper .menus .items .item__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 10px;
+  height: 100%;
+  width: 85%;
+}
+.main__wrapper .menus .items .item__validate {
+  width: 60px;
+  background-color: #99E2D0;
+  height: 100%;
+  position: absolute;
+  right: -60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main__wrapper .menus .items .item__validate i {
+  font-size: 2.16rem;
+  color: white;
+}
+.main__wrapper .menus .items span {
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+  font-size: 14px;
+  font-weight: 900;
 }
 
 footer {
@@ -317,63 +525,6 @@ footer ul li i {
 footer ul li a {
   color: white;
   font-size: 1.44rem;
-}
-
-.main__wrapper {
-  margin-top: 65px;
-  background-image: url(./../../img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  min-height: 300px;
-  width: 100%;
-}
-.main__wrapper .menus {
-  background-color: #f7f7f7;
-  transform: translateY(200px);
-  border-radius: 40px 40px 0px 0px;
-  padding-left: 10px;
-  padding-right: 10px;
-  position: relative;
-}
-.main__wrapper .menus .fa-heart {
-  top: 15%;
-  right: 10%;
-}
-.main__wrapper .menus .starters {
-  margin-top: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  flex-direction: column;
-}
-.main__wrapper .menus .starters h2 {
-  padding-left: 10px;
-  font-size: 1.68rem;
-  font-weight: 400;
-  color: #737373;
-  position: relative;
-  margin-bottom: 10px;
-}
-.main__wrapper .menus .starters h2::after {
-  content: "";
-  width: 40px;
-  height: 3px;
-  display: block;
-  background-color: #99E2D0;
-  position: absolute;
-  bottom: -5px;
-}
-.main__wrapper .menus .starters .starter {
-  background-color: white;
-  width: 98%;
-  margin: 10px auto;
-  padding: 10px;
-  border-radius: 15px;
-  box-shadow: -1px 3px 9px 1px rgba(0, 0, 0, 0.15);
-}
-.main__wrapper H1 {
-  padding-top: 30px;
-  padding-left: 10px;
 }
 
 .location {
@@ -414,27 +565,6 @@ footer ul li a {
 }
 .booking__item p {
   color: #666666;
-}
-.booking__item button {
-  background: rgb(255, 121, 218);
-  background: linear-gradient(175deg, rgb(255, 121, 218) 0%, rgb(147, 86, 220) 100%);
-  border: none;
-  border-radius: 25px;
-  margin-top: 20px;
-  height: 50px;
-  cursor: pointer;
-  box-shadow: 0px 3px 9px 0px rgba(0, 0, 0, 0.425);
-  transition: all 0.3s;
-}
-.booking__item button:hover {
-  transform: translateY(-5px);
-  box-shadow: 0px 5px 9px 0px rgba(0, 0, 0, 0.986);
-  transition: all 0.3s;
-}
-.booking__item button p {
-  color: white;
-  margin: 0 20px 0 20px;
-  font-size: 1.62rem;
 }
 
 .explaining__item {
