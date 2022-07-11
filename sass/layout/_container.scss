@@ -5,6 +5,7 @@
     flex-direction: column;
 
 
+
     .background__img {
         &.dish1 {
             background-image: url(./../../img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
@@ -41,6 +42,10 @@
         position: relative;
         padding-bottom: $gap-title;
 
+        .flex__container {
+            margin-bottom: $gap-divs;
+        }
+
         .fa-heart {
             top: 40px;
             right: 10%;
@@ -56,9 +61,7 @@
             flex-direction: column;
         }
 
-        .desserts {
-            margin-bottom: $gap-divs;
-        }
+
 
         h2 {
             padding-left: $small-gap;
@@ -210,6 +213,8 @@ footer {
     background-color: lighten($black-color, $amount: 20%);
     color: $white-color;
     height: 180px;
+    max-width: 1440px;
+    margin: auto;
 
     h3 {
         margin-left: $small-gap * 2;
@@ -236,5 +241,27 @@ footer {
                 font-size: map-get($font-size, paragraph) * 0.8;
             }
         }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .item__container {
+        width: 50%;
+        max-width: 300px;
+
+    }
+
+    .flex__container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: auto;
+        width: 90%;
+        justify-content: space-evenly;
+
+    }
+
+    .desserts {
+        margin-bottom: 0px;
     }
 }
