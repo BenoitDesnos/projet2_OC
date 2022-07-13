@@ -349,11 +349,13 @@ main button span {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column-reverse;
 }
 .wrapper__loading h2 {
   position: relative;
-  margin: 100px;
+  margin: 50px;
   font-size: 50px;
+  z-index: 4;
   color: #99E2D0;
   -webkit-text-stroke: 1px #d6d6d5;
   text-transform: uppercase;
@@ -514,7 +516,7 @@ main button span {
 }
 .wrapper__loading .bite__marks:nth-child(17) {
   visibility: hidden;
-  animation: bites-display 0s 2s forwards;
+  animation: bites-display 0s 1.9s forwards;
   left: -50px;
   transform: translate(69px, -50px) rotate(150deg);
 }
@@ -523,7 +525,7 @@ main button span {
 }
 .wrapper__loading .bite__marks:nth-child(18) {
   visibility: hidden;
-  animation: bites-display 0s 2.5s forwards;
+  animation: bites-display 0s 2.3s forwards;
   left: -50px;
   transform: translate(130px, -60px) rotate(215deg);
 }
@@ -532,7 +534,7 @@ main button span {
 }
 .wrapper__loading .bite__marks:nth-child(19) {
   visibility: hidden;
-  animation: bites-display 0s 2.7s forwards;
+  animation: bites-display 0s 2.6s forwards;
   left: -50px;
   transform: translate(125px, 10px) rotate(140deg);
 }
