@@ -11,7 +11,7 @@
     align-items: center;
     flex-direction: column-reverse;
 
-    h2 {
+    .loading-text {
         position: relative;
         margin: 50px;
         font-size: 50px;
@@ -22,7 +22,7 @@
         font-weight: 500;
     }
 
-    h2::before {
+    .loading-text::before {
         content: attr(data-text);
         position: absolute;
         top: 0;
@@ -30,10 +30,10 @@
         width: 0;
         height: 100%;
         color: $main-color;
-        -webkit-text-stroke: 0 #d6d6d5;
+        -webkit-text-stroke: 0 $secondary-color;
         border-right: 1px solid $third-color;
         overflow: hidden;
-        animation: loadingColor 2.4s 0.4s linear alternate infinite;
+        animation: loadingColor 2.4s 0.4s linear alternate forwards;
     }
 
     @keyframes loadingColor {
@@ -41,7 +41,6 @@
             width: 0;
         }
 
-        90%,
         100% {
             width: 100%;
         }
@@ -59,6 +58,7 @@
         justify-content: center;
         align-items: center;
         transform: rotate(30deg);
+
 
         svg:nth-child(1) {
             top: 25px;
