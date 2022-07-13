@@ -4,8 +4,6 @@
     display: flex;
     flex-direction: column;
 
-
-
     .background__img {
         &.dish1 {
             background-image: url(./../../img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
@@ -29,8 +27,6 @@
         background-position: center;
         min-height: 300px;
         width: 100%;
-
-
     }
 
     .menus {
@@ -57,11 +53,8 @@
             margin-top: $gap-title;
             display: flex;
             justify-content: flex-start;
-
             flex-direction: column;
         }
-
-
 
         h2 {
             padding-left: $small-gap;
@@ -97,8 +90,6 @@
             overflow-x: hidden;
         }
 
-
-
         .items1 {
             animation: items-display 1.5s forwards linear;
         }
@@ -127,11 +118,6 @@
             position: relative;
             overflow: hidden;
             transform: translateY(30px);
-
-
-
-
-
             cursor: pointer;
 
             &:hover {
@@ -143,7 +129,7 @@
                     }
                 }
 
-                span {
+                .price {
                     right: 80px;
                 }
 
@@ -152,7 +138,7 @@
                 }
 
                 .item__validate,
-                span,
+                .price,
                 .item__text,
                 i {
                     transition: all 0.3s
@@ -160,13 +146,11 @@
             }
 
             .item__validate,
-            span,
+            .price,
             .item__text,
             i {
                 transition: all 0.3s
             }
-
-
 
             .item__text {
                 display: flex;
@@ -175,7 +159,6 @@
                 padding: $small-gap;
                 height: 100%;
                 width: 85%;
-
             }
 
             .item__validate {
@@ -191,21 +174,17 @@
                 i {
                     font-size: map-get($font-size, paragraph)*1.2;
                     color: $white-color;
-
                 }
             }
 
-            span {
+            .price {
                 position: absolute;
                 bottom: 10px;
                 right: 20px;
                 font-size: 14px;
                 font-weight: 900;
             }
-
-
         }
-
     }
 }
 
@@ -213,9 +192,6 @@ footer {
     background-color: lighten($black-color, $amount: 20%);
     color: $white-color;
     height: 180px;
-    max-width: 1440px;
-    margin: auto;
-
 
     h3 {
         margin-left: $small-gap * 2;
@@ -233,11 +209,9 @@ footer {
 
             i {
                 width: 20px;
-
             }
 
             a {
-
                 color: $white-color;
                 font-size: map-get($font-size, paragraph) * 0.8;
             }
@@ -246,10 +220,29 @@ footer {
 }
 
 @media screen and (min-width: 768px) {
+    .main__wrapper .menus {
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-top: $gap-title;
+
+        .fa-heart {
+            top: 70px;
+            right: 5%;
+        }
+    }
+
+    footer {
+
+        h3,
+        ul {
+            width: 90%;
+            margin: auto;
+        }
+    }
+
     .item__container {
         width: 33%;
         min-width: 350px;
-
     }
 
     .flex__container {
@@ -257,9 +250,7 @@ footer {
         flex-direction: row;
         flex-wrap: wrap;
         margin: auto;
-
         justify-content: space-evenly;
-
     }
 
     .desserts {

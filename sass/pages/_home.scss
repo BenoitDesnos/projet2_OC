@@ -33,7 +33,6 @@
         text-align: center;
     }
 
-
     p {
         text-align: center;
         margin: 0 35px 10px 35px;
@@ -42,8 +41,6 @@
     p {
         color: lighten($black-color, $amount: 40%);
     }
-
-
 }
 
 .explaining__item {
@@ -76,25 +73,9 @@
     }
 
     .choice__item:nth-child(3) {
-        &:hover {
-
-            background-color: lighten($main-color, $amount: 37%);
-
-            box-shadow: -1px 3px 9px 1px rgba(0, 0, 0, 0.30);
-            transition: all 0.3s;
-        }
-
         &::before {
             content: "3";
         }
-
-        background-color: lighten($main-color, $amount: 35%);
-
-        i {
-
-            color: $main-color;
-        }
-
     }
 
     .choice__item {
@@ -115,11 +96,17 @@
         }
 
         &:hover {
-
-            background-color: $white-color;
-
+            background-color: lighten($main-color, $amount: 35%);
             box-shadow: -1px 3px 9px 1px rgba(0, 0, 0, 0.30);
             transition: all 0.3s;
+
+            i {
+                color: $main-color;
+            }
+        }
+
+        &::before {
+            content: "1";
         }
 
         cursor: pointer;
@@ -131,7 +118,6 @@
         background-color: lighten($black-color, $amount: 97%);
         border-radius: 20px / 20px;
         margin: 10px 0 10px 0;
-
         box-shadow: -1px 3px 9px 1px rgba(0, 0, 0, 0.15);
         position: relative;
         transition: all 0.3s;
@@ -142,8 +128,7 @@
             position: relative;
             text-align: left;
             width: 75%;
-
-
+            padding: 0 10px 0 10px;
         }
 
         i {
@@ -156,7 +141,6 @@
             transform: translateY(-1PX);
             color: lighten($black-color, $amount: 50%);
         }
-
     }
 }
 
@@ -167,6 +151,7 @@
     align-items: center;
     padding-bottom: $gap-divs;
     background-color: lighten($black-color, $amount: 97%);
+    min-width: 86%;
 
     h2 {
         width: 335px;
@@ -185,7 +170,6 @@
             height: 250px;
             overflow: hidden;
             border-radius: 15px;
-
             box-shadow: -1px 3px 9px 1px rgba(0, 0, 0, 0.15);
             margin: $small-gap 0;
             transition: all 0.1s;
@@ -260,19 +244,33 @@
 }
 
 @media screen and (min-width: 768px) {
-    .restaurants__wrapper {
+    .explaining__item {
+        width: 90%;
+
         h2 {
             width: auto;
+        }
+    }
+
+    .restaurants__wrapper {
+        width: 100%;
+
+
+        h2 {
+            width: auto;
+
         }
 
         .cards {
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
-            justify-content: center;
+            justify-content: space-evenly;
             align-items: center;
+
             width: 100%;
             padding: $small-gap;
+            padding: 0px;
 
             .card {
                 margin: $small-gap;
@@ -284,9 +282,7 @@
 
         }
     }
-}
 
-@media screen and (min-width: 768px) {
     .booking__item {
         height: 240px;
     }
@@ -294,11 +290,11 @@
     .choice__items {
         flex-direction: row;
         justify-content: space-between;
+        transform: translateX(0px);
 
         .choice__item {
             width: 30%;
         }
 
     }
-
 }

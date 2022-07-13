@@ -36,18 +36,6 @@
         animation: loadingColor 2.4s 0.4s linear alternate forwards;
     }
 
-    @keyframes loadingColor {
-        0% {
-            width: 0;
-        }
-
-        100% {
-            width: 100%;
-        }
-    }
-
-
-
     .pizza {
         height: 18rem;
         width: 20rem;
@@ -148,7 +136,6 @@
 
     }
 
-
     .bite__marks {
         visibility: hidden;
         animation: bites-display 0s 0.5s forwards;
@@ -165,7 +152,6 @@
             width: 20px;
             height: 100px;
             border-radius: 25px;
-
         }
 
         span:nth-child(2) {
@@ -266,13 +252,4 @@
         }
     }
 
-
-
-
-
-    @keyframes spin {
-        to {
-            transform: rotate(360deg);
-        }
-    }
 }
