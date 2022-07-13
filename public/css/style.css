@@ -240,6 +240,17 @@
     opacity: 1;
   }
 }
+@keyframes bites-display {
+  to {
+    visibility: visible;
+  }
+}
+@keyframes loader-display {
+  to {
+    z-index: -5;
+    visibility: hidden;
+  }
+}
 *,
 *::after,
 *::before {
@@ -328,6 +339,7 @@ main button span {
 }
 
 .wrapper__loading {
+  animation: loader-display 0s 3s forwards;
   position: fixed;
   background-color: white;
   width: 100%;
@@ -337,6 +349,36 @@ main button span {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.wrapper__loading h2 {
+  position: relative;
+  margin: 100px;
+  font-size: 50px;
+  color: #99E2D0;
+  -webkit-text-stroke: 1px #d6d6d5;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.wrapper__loading h2::before {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  color: #9356DC;
+  -webkit-text-stroke: 0 #d6d6d5;
+  border-right: 1px solid #99E2D0;
+  overflow: hidden;
+  animation: loadingColor 2.4s 0.4s linear alternate infinite;
+}
+@keyframes loadingColor {
+  0% {
+    width: 0;
+  }
+  90%, 100% {
+    width: 100%;
+  }
 }
 .wrapper__loading .pizza {
   height: 18rem;
@@ -373,7 +415,7 @@ main button span {
   stroke-width: 0;
   position: absolute;
 }
-.wrapper__loading .pizza span {
+.wrapper__loading .pizza .red__dot {
   height: 2rem;
   width: 2rem;
   display: block;
@@ -381,43 +423,139 @@ main button span {
   border-radius: 50%;
   position: absolute;
 }
-.wrapper__loading .pizza span:nth-child(4) {
+.wrapper__loading .pizza .red__dot:nth-child(4) {
   top: 50px;
 }
-.wrapper__loading .pizza span:nth-child(5) {
+.wrapper__loading .pizza .red__dot:nth-child(5) {
   top: 25px;
   left: 20px;
 }
-.wrapper__loading .pizza span:nth-child(6) {
+.wrapper__loading .pizza .red__dot:nth-child(6) {
   top: 10px;
 }
-.wrapper__loading .pizza span:nth-child(7) {
+.wrapper__loading .pizza .red__dot:nth-child(7) {
   top: 70px;
   right: 10px;
 }
-.wrapper__loading .pizza span:nth-child(8) {
+.wrapper__loading .pizza .red__dot:nth-child(8) {
   bottom: 10px;
   left: 40px;
 }
-.wrapper__loading .pizza span:nth-child(9) {
+.wrapper__loading .pizza .red__dot:nth-child(9) {
   bottom: 40px;
   left: 15px;
 }
-.wrapper__loading .pizza span:nth-child(10) {
+.wrapper__loading .pizza .red__dot:nth-child(10) {
   bottom: 30px;
   right: 25px;
 }
-.wrapper__loading .pizza span:nth-child(11) {
+.wrapper__loading .pizza .red__dot:nth-child(11) {
   bottom: 30px;
   left: 50%;
 }
-.wrapper__loading .pizza span:nth-child(12) {
+.wrapper__loading .pizza .red__dot:nth-child(12) {
   top: 30px;
   right: 30px;
 }
-.wrapper__loading .pizza span:nth-child(13) {
+.wrapper__loading .pizza .red__dot:nth-child(13) {
   bottom: 50%;
   left: 30px;
+}
+.wrapper__loading .bite__marks {
+  visibility: hidden;
+  animation: bites-display 0s 0.5s forwards;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: -50px;
+  transform: translate(35px, 0px) rotate(100deg);
+}
+.wrapper__loading .bite__marks span {
+  position: absolute;
+  display: block;
+  background-color: white;
+  width: 20px;
+  height: 100px;
+  border-radius: 25px;
+}
+.wrapper__loading .bite__marks span:nth-child(2) {
+  left: 17px;
+  top: 10px;
+}
+.wrapper__loading .bite__marks span:nth-child(3) {
+  left: -17px;
+  top: 10px;
+}
+.wrapper__loading .bite__marks span:nth-child(4) {
+  left: 34px;
+  top: 25px;
+}
+.wrapper__loading .bite__marks span:nth-child(5) {
+  left: -34px;
+  top: 25px;
+}
+.wrapper__loading .bite__marks:nth-child(15) {
+  visibility: hidden;
+  animation: bites-display 0s 1s forwards;
+  left: -50px;
+  transform: translate(70px, 52px) rotate(40deg);
+}
+.wrapper__loading .bite__marks:nth-child(15) span {
+  background-color: white;
+}
+.wrapper__loading .bite__marks:nth-child(16) {
+  visibility: hidden;
+  animation: bites-display 0s 1.5s forwards;
+  left: -50px;
+  transform: translate(90px, 20px) rotate(70deg);
+}
+.wrapper__loading .bite__marks:nth-child(16) span {
+  background-color: white;
+}
+.wrapper__loading .bite__marks:nth-child(17) {
+  visibility: hidden;
+  animation: bites-display 0s 2s forwards;
+  left: -50px;
+  transform: translate(69px, -50px) rotate(150deg);
+}
+.wrapper__loading .bite__marks:nth-child(17) span {
+  background-color: rgb(255, 255, 255);
+}
+.wrapper__loading .bite__marks:nth-child(18) {
+  visibility: hidden;
+  animation: bites-display 0s 2.5s forwards;
+  left: -50px;
+  transform: translate(130px, -60px) rotate(215deg);
+}
+.wrapper__loading .bite__marks:nth-child(18) span {
+  background-color: white;
+}
+.wrapper__loading .bite__marks:nth-child(19) {
+  visibility: hidden;
+  animation: bites-display 0s 2.7s forwards;
+  left: -50px;
+  transform: translate(125px, 10px) rotate(140deg);
+}
+.wrapper__loading .bite__marks:nth-child(19) span {
+  background-color: white;
+}
+.wrapper__loading .bite__marks:nth-child(20) {
+  visibility: hidden;
+  animation: bites-display 0s 2.9s forwards;
+  left: -50px;
+  transform: translate(165px, 30px) rotate(210deg);
+}
+.wrapper__loading .bite__marks:nth-child(20) span {
+  background-color: white;
+}
+.wrapper__loading .bite__marks:nth-child(21) {
+  visibility: hidden;
+  animation: bites-display 0.1s 3s forwards;
+  left: -50px;
+  transform: scale(1.5) translate(50px, 25px) rotate(250deg);
+}
+.wrapper__loading .bite__marks:nth-child(21) span {
+  background-color: white;
 }
 @keyframes spin {
   to {
@@ -497,8 +635,7 @@ header a i {
 .main__wrapper .menus .desserts {
   margin-top: 30px;
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
+  justify-content: flex-start;
   flex-direction: column;
 }
 .main__wrapper .menus h2 {
@@ -567,7 +704,7 @@ header a i {
   right: 80px;
 }
 .main__wrapper .menus .items:hover .item__text {
-  width: 73%;
+  width: 68%;
 }
 .main__wrapper .menus .items:hover .item__validate,
 .main__wrapper .menus .items:hover span,
@@ -616,7 +753,6 @@ footer {
   color: white;
   height: 180px;
   max-width: 1440px;
-  margin: auto;
 }
 footer h3 {
   margin-left: 20px;
@@ -641,15 +777,14 @@ footer ul li a {
 
 @media screen and (min-width: 768px) {
   .item__container {
-    width: 50%;
-    max-width: 300px;
+    width: 33%;
+    min-width: 350px;
   }
   .flex__container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     margin: auto;
-    width: 90%;
     justify-content: space-evenly;
   }
   .desserts {
@@ -884,6 +1019,18 @@ footer ul li a {
   }
   .restaurants__wrapper .cards .card {
     margin: 10px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .booking__item {
+    height: 240px;
+  }
+  .choice__items {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .choice__items .choice__item {
+    width: 30%;
   }
 }
 
