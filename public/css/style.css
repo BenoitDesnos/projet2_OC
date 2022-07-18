@@ -359,7 +359,7 @@ main button span {
 
 .wrapper__loading {
   box-sizing: border-box;
-  animation: loader-display 0s 3.2s forwards;
+  animation: loader-display 0s 3.2s forwards, wrapper-anim 3s forwards;
   position: fixed;
   background-color: white;
   background-attachment: fixed;
@@ -373,19 +373,17 @@ main button span {
   justify-content: center;
   align-items: center;
   flex-direction: column-reverse;
-  /*   @keyframes wrapper-anim {
-      0% {
-          transform: translateX(0px) scale(2.5) rotateZ(0deg);
-      }
-
-      80% {
-          transform: translateX(0px) scale(2.5) rotateZ(-360deg);
-      }
-
-      100% {
-          transform: translateX(200%) scale(2.5) rotateZ(-360deg);
-      }
-  } */
+}
+@keyframes wrapper-anim {
+  0% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 .wrapper__loading .loader {
   position: absolute;
@@ -418,6 +416,7 @@ main button span {
   border-radius: 10px;
   background-color: #9356DC;
   transform-origin: 50% 90px;
+  opacity: 0;
   animation: dot1 1.44s cubic-bezier(0.5, 0, 0.5, 1) infinite, dot1-color 2.9s forwards;
 }
 .wrapper__loading .loader .dot:nth-child(2) {
@@ -473,10 +472,12 @@ main button span {
 /* Dot animations */
 @keyframes dot1 {
   0% {
+    opacity: 1;
     transform: rotateZ(30deg);
   }
   100% {
     transform: rotateZ(390deg);
+    opacity: 1;
   }
 }
 @keyframes dot1-color {
@@ -486,10 +487,12 @@ main button span {
 }
 @keyframes dot2 {
   0% {
+    opacity: 1;
     transform: rotateZ(15deg) rotateX(10deg);
   }
   100% {
     transform: rotateZ(375deg) rotateX(10deg);
+    opacity: 1;
   }
 }
 @keyframes dot2-color {
@@ -499,10 +502,12 @@ main button span {
 }
 @keyframes dot3 {
   0% {
+    opacity: 1;
     transform: rotateZ(0deg) rotateX(10deg);
   }
   100% {
     transform: rotateZ(360deg) rotateX(10deg);
+    opacity: 1;
   }
 }
 @keyframes dot3-color {
@@ -512,10 +517,12 @@ main button span {
 }
 @keyframes dot4 {
   0% {
+    opacity: 1;
     transform: rotateZ(-15deg) rotateX(10deg);
   }
   100% {
     transform: rotateZ(345deg) rotateX(10deg);
+    opacity: 1;
   }
 }
 @keyframes dot4-color {
@@ -525,10 +532,12 @@ main button span {
 }
 @keyframes dot5 {
   0% {
+    opacity: 1;
     transform: rotateZ(-30deg) rotateX(10deg);
   }
   100% {
     transform: rotateZ(330deg) rotateX(10deg);
+    opacity: 1;
   }
 }
 @keyframes dot5-color {
@@ -538,10 +547,12 @@ main button span {
 }
 @keyframes dot6 {
   0% {
+    opacity: 1;
     transform: rotateZ(-45deg) rotateX(10deg);
   }
   100% {
     transform: rotateZ(315deg) rotateX(10deg);
+    opacity: 1;
   }
 }
 @keyframes dot6-color {
