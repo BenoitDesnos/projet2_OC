@@ -409,8 +409,8 @@ header a i {
 .main__wrapper .menus .desserts {
   margin-top: 30px;
   display: flex;
+  justify-content: flex-start;
   flex-direction: column;
-  justify-content: center;
 }
 .main__wrapper .menus h2 {
   padding-left: 10px;

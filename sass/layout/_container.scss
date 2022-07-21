@@ -51,7 +51,9 @@
         .main__dish,
         .desserts {
             margin-top: $gap-title;
-            @include flex-column-center;
+            display: flex;
+            justify-content: flex-start;
+            flex-direction: column;
         }
 
         h2 {
