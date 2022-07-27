@@ -4,11 +4,6 @@
         opacity: 0;
     }
 
-    33% {
-        transform: translateY(20px);
-        opacity: 0;
-    }
-
     66% {
         transform: translateY(10px);
         opacity: 0;
@@ -26,47 +21,191 @@
 
 }
 
-@keyframes bites-display {
-    to {
-        visibility: visible;
-
-    }
-
-
-}
-
-@keyframes loader-display {
+@keyframes wrapper-anim {
     0% {
         opacity: 1;
     }
 
-    95% {
-
+    90% {
         opacity: 1;
-
     }
 
     100% {
         opacity: 0;
-        z-index: -5;
-        visibility: hidden;
     }
-
-
 }
 
-@keyframes loadingColor {
+@keyframes loader-display {
+    to {
+        z-index: -5;
+    }
+}
+
+
+@keyframes loading-opacity {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0.4;
+    }
+}
+
+@keyframes loading-color {
+    to {
+        color: $third-color;
+    }
+}
+
+/* Dot animations */
+@keyframes dot1 {
     0% {
-        width: 0;
+        opacity: 1;
+        transform: rotateZ(30deg);
     }
 
     100% {
-        width: 100%;
+        transform: rotateZ(390deg);
+        opacity: 1;
+
+
     }
 }
 
-@keyframes spin {
+@keyframes dot1-color {
+
     to {
-        transform: rotate(360deg);
+        background-color: $third-color;
     }
+
+}
+
+@keyframes dot2 {
+    0% {
+        opacity: 1;
+        transform: rotateZ(15deg) rotateX(10deg);
+    }
+
+    100% {
+        transform: rotateZ(375deg) rotateX(10deg);
+        opacity: 1;
+    }
+}
+
+@keyframes dot2-color {
+
+
+    to {
+
+        background-color: lighten($third-color, 3%);
+    }
+
+
+}
+
+@keyframes dot3 {
+    0% {
+        opacity: 1;
+        transform: rotateZ(0deg) rotateX(10deg);
+    }
+
+
+
+    100% {
+        transform: rotateZ(360deg) rotateX(10deg);
+        opacity: 1;
+
+
+    }
+}
+
+@keyframes dot3-color {
+
+
+    to {
+
+        background-color: lighten($third-color, 6%);
+    }
+
+
+}
+
+@keyframes dot4 {
+    0% {
+        opacity: 1;
+        transform: rotateZ(-15deg) rotateX(10deg);
+    }
+
+
+
+    100% {
+        transform: rotateZ(345deg) rotateX(10deg);
+        opacity: 1;
+
+    }
+}
+
+@keyframes dot4-color {
+
+
+    to {
+
+        background-color: lighten($third-color, 9%);
+    }
+
+
+}
+
+@keyframes dot5 {
+    0% {
+        opacity: 1;
+        transform: rotateZ(-30deg) rotateX(10deg);
+    }
+
+
+    100% {
+        transform: rotateZ(330deg) rotateX(10deg);
+        opacity: 1;
+
+    }
+}
+
+@keyframes dot5-color {
+
+
+    to {
+
+        background-color: lighten($third-color, 12%);
+    }
+
+
+}
+
+@keyframes dot6 {
+    0% {
+        opacity: 1;
+        transform: rotateZ(-45deg) rotateX(10deg);
+
+    }
+
+
+
+    100% {
+        transform: rotateZ(315deg) rotateX(10deg);
+        opacity: 1;
+
+    }
+
+}
+
+@keyframes dot6-color {
+
+
+    to {
+
+        background-color: lighten($third-color, 15%);
+    }
+
+
 }
